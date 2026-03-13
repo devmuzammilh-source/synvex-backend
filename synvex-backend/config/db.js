@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/signupdb")
+mongoose.connect(process.env.MONGO-URI)
 .then(() => {
     console.log("Connected to MongoDB");
 })
